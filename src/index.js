@@ -152,7 +152,7 @@ function createInfoElement(image) {
 }
 
 function showErrorMessage(message) {
-  Notiflix.Notify.Failure(message);
+  Notiflix.notify.Failure(message);
 }
 
 function showLargeImage(url) {
