@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <title>Page title</title>
-  <link rel="stylesheet" href="./sass/index.scss" /> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search App</title>
   <link rel="stylesheet" href="./css/style.css">
 
-  <title>Image Search App</title>
 </head>
 
 <body>
@@ -16,18 +14,16 @@
     <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
     <button type="submit">Search</button>
   </form>
-  <div class="gallery">
-    <!-- Image cards will be added here dynamically -->
+
+  <div class="gallery" id="gallery">
   </div>
 
-  <button type="button" class="load-more" style="display: none;">Load more</button>
+  <button type="button" class="load-more" id="load-more" style="display: none">Load more</button>
 
-  <script type="module" src="./index.js"></script>
-  <script type="module" src="./app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/notiflix@2.7.0/dist/notiflix-aio-2.7.0.min.js"></script>
 
-  <!-- <include src="./partials/example.html"></include> -->
+  <script src="index.js"></script>
 </body>
 
 </html>
